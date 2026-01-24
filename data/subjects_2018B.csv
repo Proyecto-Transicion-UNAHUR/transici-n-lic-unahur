@@ -1,9 +1,12 @@
 code,name,credits,hours_hint
+788,Matemática para Informática I,,64
 789,Introducción a Lógica y Problemas Computacionales,,64
 792,Programación Estructurada,,96
+793,Matemática para Informática II,,96
 753,Programación con Objetos I,,128
-ED,Estructuras de Datos,,128
-OC,Organización de Computadoras,,128
+752,Estructuras de Datos,,128
+754,Bases de Datos,,96
+790,Organización de Computadoras I,,96
 761,Programación Funcional,,64
 776,Programación con Objetos III,,64
 780,Características de Lenguajes de Programación,,64
