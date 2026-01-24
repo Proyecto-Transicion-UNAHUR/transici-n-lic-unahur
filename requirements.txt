@@ -1,0 +1,5 @@
+streamlit==1.36.0
+SQLAlchemy==1.4.52
+PyYAML==6.0.2
+reportlab==4.2.2
+pandas==2.2.2

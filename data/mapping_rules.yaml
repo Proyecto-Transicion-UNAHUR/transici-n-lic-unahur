@@ -1,0 +1,46 @@
+- type: DIRECT
+  src_2018_codes: ["753"]
+  dst_2025_codes: ["753"]
+  comment: "Directa"
+- type: DIRECT
+  src_2018_codes: ["789"]
+  dst_2025_codes: ["789"]
+  comment: "Directa"
+- type: DIRECT
+  src_2018_codes: ["792"]
+  dst_2025_codes: ["792"]
+  comment: "Directa"
+- type: DIRECT
+  src_2018_codes: ["ED"]
+  dst_2025_codes: ["ED"]
+- type: DIRECT
+  src_2018_codes: ["766"]
+  dst_2025_codes: ["LI3"]
+- type: SPLIT_1toN
+  src_2018_codes: ["OC"]
+  dst_2025_codes: ["OC1", "OC2"]
+  comment: "Split"
+- type: SPLIT_1toN
+  src_2018_codes: ["767"]
+  dst_2025_codes: ["789", "792"]
+  comment: "Split"
+- type: MERGE_Nto1
+  src_2018_codes: ["PF", "PC"]
+  dst_2025_codes: ["LI4"]
+  aca_on_partial: 3
+  comment: "Si falta una, 3 ACA; con ambas, aprueba LI3"
+- type: MERGE_Nto1
+  src_2018_codes: ["761", "776", "780"]
+  dst_2025_codes: ["LI2"]
+  aca_on_partial: 3
+  aca_partial_mode: per_source   # calcula ACA por cada materia aprobada (predeterminado)
+  comment: "761 + 776 + 780 → LI3; con una sola o dos, ACA parciales"
+- type: ACA_ONLY
+  src_2018_codes: ["ING1"]
+  aca_credits: 3
+- type: ACA_ONLY
+  src_2018_codes: ["OPT1"]
+  aca_credits: 4
+- type: ACA_ONLY
+  src_2018_codes: ["OPT2"]
+  aca_credits: 4
