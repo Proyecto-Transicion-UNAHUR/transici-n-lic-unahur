@@ -26,6 +26,16 @@ for k, v in {
 
 def render_student():
     init_db()
+    # ✅ Inicialización por sesión (clave para multi-sesión)
+    st.session_state.setdefault("step", 1)
+    st.session_state.setdefault("nombre", "")
+    st.session_state.setdefault("dni", "")
+    st.session_state.setdefault("variant", "A")   # A o B
+
+    # selections (según cómo lo implementaste)
+    st.session_state.setdefault("subject_codes", [])
+    st.session_state.setdefault("activity_codes", [])
+
     st.title("Transición Plan 2018 → Plan 2025")
 
     if st.session_state["step"] == 1:
