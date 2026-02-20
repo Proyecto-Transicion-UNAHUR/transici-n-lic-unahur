@@ -1,0 +1,29 @@
+# --- SEGURIDAD ---
+.env
+.streamlit/secrets.toml
+
+# --- PYTHON ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# --- BASE DE DATOS LOCAL ---
+# Esto evita que subas tu base de datos de prueba a GitHub
+*.db
+*.sqlite3
+
+# --- DISTRIBUCIÓN / PAQUETES ---
+dist/
+build/
+*.egg-info/
+
+# --- IDEs ---
+.vscode/
+.idea/
+
+# --- ARCHIVOS TEMPORALES ---
+*.log
+.DS_Store
